@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>メールフォームHTMLの作成練習</title>
+	</head>
+	<body>
+		<form action = "mail_form.php" method = "post">
+			<p>
+				名前:<input type = "text" name = "name" size = "15">
+			</p>
+			<p>
+				性別:<input type="radio" name="sex" value="male">男
+					<input type="radio" name="sex" value="female">女
+				
+			</p>
+			<p>
+				MailAdrress:<input type="mailaddress" size = "60">
+			</p>
+			<p>
+				年齢:<select name = "age">
+					<option value = "10">10代</option>
+					<option value = "20">20代</option>
+					<option value = "30">30代</option>
+					<option value = "40">40代</option>
+					<option value = "50">50代</option>
+					<option value = "60">60代</option>
+					<option value = "70">70代</option>
+					<option value = "80">80代</option>
+					<option value = "90">90代</option>
+				 	</select>
+			</p>
+			<p>
+				お問い合わせ内容<br>
+				<textarea name="question" rows = "7" cols = "80"></textarea>
+			</p>
+
+			<p>
+			<input type = "submit" value = "送信">
+			</p>
+		</form>
+	</body>
+</html>
